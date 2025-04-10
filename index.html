@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meeting Minutes</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="icon" href="favicon.ico" />
+    </head>
+    <body>
+        <header>
+            <h1>Meeting Minutes</h1>
+            <h3>Check-in and future planning</h3>
+            <details>
+                <summary>Meeting Details</summary>
+                Meeting Date: MM-DD-YYYY  XX:XX AM/PM
+            </details>
+            <h2>Agenda</h2>
+            <nav>
+                <ol>
+                    <li><a href="#check-in">Check-in for attendees</a></li>
+                    <li><a href="#previous">Previous catch-up</a></li>
+                    <li><a href="#goals">Current goals</a></li>
+                    <li><a href="#next">Next steps</a></li>
+                </ol>
+            </nav>
+        </header>
+        <hr>
+
+        <main>
+            <section>
+            <h3 id="check-in"><b>Attendees</b></h3>
+            <div>
+                <ul>
+                    <li>Attendee 1</li>
+                    <li>Attendee 2</li>
+                    <li>Attendee 3</li>
+                    <li>Attendee 4</li>
+                </ul>
+            </div>
+            <h3>Absentees</h3>
+            <div>
+                <ul>
+                    <li>Attendee 5</li>
+                    <li>Attendee 6</li>
+                </ul>
+            </div>
+            </section>
+            <hr>
+            <section>
+                <h3 id="previous">Unfinished business from previous meeting(s)</h3>
+                <ul>
+                    <li><em>Finish brainstorming potential project ideas</em></li>
+                </ul>
+                <h3 id="goals">Goals for this meeting</h3>
+                <ul>
+                    <li><b>Determine the roles of each member and how we want to split the work</b></li>
+                    <li><i>Form smaller sub-teams where <span>person A, person B, person C, etc...</span>
+                    focus on areas where specialize in</i></li>
+                </ul>
+            </section>
+            <br />
+            <section>
+                <h3 id="action">Action items</h3>
+                <p><strong>Attendee 1 will be project manager for this week</strong><br />
+                    <ul>
+                        <li>Attendee 1 will be responsible for setting up the next meeting</li>
+                        <li>Attendee 1 will be responsible for sending out the minutes from this meeting</li>
+                    </ul>
+                </p>
+            </section>
+
+            <section>
+                <p><b>Meeting minutes format for future reference</b></p>
+                <img 
+                    src="https://images.ctfassets.net/lzny33ho1g45/2O3r477f8rfyMRPVTmiWu6/bfd496c429adfdada858e5c4dd6310e7/standard-meeting-minutes-template.webp?w=1400&fm=avif"
+                    alt="Meeting minutes format"
+                    width="500" height="800"/>
+            </section>
+
+            <section>
+                <video width="500" height="300" controls>
+                    <source src="baby_chicken.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video><br>
+                    
+                <audio controls>
+                    <source src="town.mp3">
+                    Your browser does not support the audio tag.
+                    </audio>
+            </section>
+            <hr />
+
+            <section>
+                <form>
+                    <fieldset>
+                        <legend>Evaluation Form</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">                         
+                        </div>
+
+                        <div>
+                            <label for="date">Date:</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+
+                        <div>
+                            <p>What did your team go over this meeting?</p>
+                            <input type="checkbox" id="timeline"/>
+                            <label for="timeline">Project timeline</label><br>
+
+                            <input type="checkbox" id="brainstorm"/>
+                            <label for="brainstorm">Brainstorming</label><br>
+
+                            <input type="checkbox" id="diagram"/>
+                            <label for="diagram">Diagram planning</label><br>
+
+                            <input type="checkbox" id="code"/>
+                            <label for="code">Code review</label><br>
+                            
+                            <input type="checkbox" id="other"/>
+                            <label for="other">Other</label><br><br>
+                            <label for="other-text">Please specify:</label><br>
+                            <textarea id="other-text" name="other-text" rows="4" cols="35"></textarea>
+                        </div>
+
+                        <div>
+                            <p>How busy is your schedule this week? (5 being most busy 1 being least busy)</p>
+                            <input type="radio" id="1" name="schedule" value="1">
+                            <label for="1">1</label>
+                            <input type="radio" id="2" name="schedule" value="2">
+                            <label for="2">2</label>
+                            <input type="radio" id="3" name="schedule" value="3">
+                            <label for="3">3</label>
+                            <input type="radio" id="4" name="schedule" value="4">
+                            <label for="4">4</label>
+                            <input type="radio" id="5" name="schedule" value="5">
+                            <label for="5">5</label>
+                        </div>
+
+                        <div>
+                            <br><label for="hours">Approximately how many hours will you be able to work the upcoming week?</label>
+                            <input list="time" id="hours" name="hours" />
+                            <datalist id="time">
+                                <option value="">--Please choose an option--</option>
+                                <option value="less than 2 hours"></option>
+                                <option value="2-4 hours"></option>
+                                <option value="4-6 hours"></option>
+                                <option value="more than 6 hours"></option> 
+                            </datalist>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+                <section>
+                    <button type="submit">Submit</button>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <p><b>CSE110 Team</b></p>
+        </footer>
+    </body>
+</html>
