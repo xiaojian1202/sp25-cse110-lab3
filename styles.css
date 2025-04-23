@@ -8,15 +8,36 @@
 .minutes-header {
     background-color: rgb(173, 216, 230);
     background-color: var(--main_bg_color, #4682b4);
+    border-radius: 20px;
     font-size: 1rem;
 }
 
+.minutes-header h1 {
+    display: inline;
+    background-color: lightgoldenrodyellow;
+    border-radius: 12px;
+}
+.minutes-header h3 {
+    color: darkslategray;
+    position: relative;
+}
+
+.minutes-nav a:hover {
+    text-decoration: rgb(124, 235, 124) wavy underline;
+    color: rgb(239, 224, 96);
+}
 .attendees ul {
     background-color: #b7ddfe;
+    display: inline-block;
+    border-radius: 10px;
+    align-items: center;
 }
 
 .absentees ul {
     background-color: hsl(164, 55%, 68%);
+    display: inline-block;
+    position: static;
+    border-radius: 10px;
 }
 
 .minutes-agenda {
@@ -29,10 +50,21 @@
     width: 50%;
     height: 8in;
     margin: 15px auto 30px auto;
+    max-width: 100%;
 }
 .video-section {
     background-color: color(display-p3 0.3 0.5 0.9);
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px 20px 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    margin: auto;
+}
+
+.audio {
+    display: flex;
+    margin: 15px auto 0 auto;
+
 }
 
 /* form section*/
@@ -51,6 +83,8 @@
     border-color: darkslateblue;
     border-width: 3px;
     border-radius: 8px;
+
+    min-width: 300px;
 }
 
 .form-group {
@@ -65,6 +99,12 @@
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    display: inline-block;
+}
+
+#submission:active {
+    background-color: orange;
+    color: white;
 }
 
 #footer {
