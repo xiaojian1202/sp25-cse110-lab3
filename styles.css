@@ -7,6 +7,7 @@
 .minutes-header {
     background-color: rgb(173, 216, 230);
     background-color: var(--main_bg_color, #4682b4);
+    font-size: 1rem;
 }
 
 .attendees ul {
@@ -19,17 +20,27 @@
 
 .minutes-agenda {
     color: rgb(0, 0, 128);
+    padding: 1.5em;
+}
+
+.image-section img{
+    width: 50%;
+    height: 8in;
 }
 .video-section {
     background-color: color(display-p3 0.3 0.5 0.9);
 }
 
+.form-group {
+    font-size: 13pt;
+}
 #submission {
     background-color: color-mix(in srgb, rgb(43, 98, 160) 60%, red 40%);
     color: white;
     padding: 0.5em 1em;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
 }
 #footer {
     color: white;
