@@ -8,17 +8,19 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
-        <header>
+        <header class="minutes-header">
             <h1>Meeting Minutes</h1>
             <h3>Check-in and future planning</h3>
-            <details>
+            <details class="meeting-details">
                 <summary>Meeting Details</summary>
                 Meeting Date: MM-DD-YYYY  XX:XX AM/PM
             </details>
             <h2>Agenda</h2>
-            <nav>
+            <nav class="minutes-nav">
                 <ol>
                     <li><a href="#check-in">Check-in for attendees</a></li>
                     <li><a href="#previous">Previous catch-up</a></li>
@@ -29,10 +31,10 @@
         </header>
         <hr>
 
-        <main>
+        <main class="minutes-main">
             <section>
             <h3 id="check-in"><b>Attendees</b></h3>
-            <div>
+            <div class="attendees">
                 <ul>
                     <li>Attendee 1</li>
                     <li>Attendee 2</li>
@@ -41,7 +43,7 @@
                 </ul>
             </div>
             <h3>Absentees</h3>
-            <div>
+            <div class="absentees">
                 <ul>
                     <li>Attendee 5</li>
                     <li>Attendee 6</li>
@@ -49,7 +51,8 @@
             </div>
             </section>
             <hr>
-            <section>
+
+            <section class="minutes-agenda">
                 <h3 id="previous">Unfinished business from previous meeting(s)</h3>
                 <ul>
                     <li><em>Finish brainstorming potential project ideas</em></li>
@@ -62,7 +65,7 @@
                 </ul>
             </section>
             <br />
-            <section>
+            <section class="actions">
                 <h3 id="action">Action items</h3>
                 <p><strong>Attendee 1 will be project manager for this week</strong></p><br />
                     <ul>
@@ -71,7 +74,7 @@
                     </ul>
             </section>
 
-            <section>
+            <section class="image-section">
                 <p><b>Meeting minutes format for future reference</b></p>
                 <img 
                     src="https://images.ctfassets.net/lzny33ho1g45/2O3r477f8rfyMRPVTmiWu6/bfd496c429adfdada858e5c4dd6310e7/standard-meeting-minutes-template.webp?w=1400&fm=avif"
@@ -79,7 +82,7 @@
                     width="500" height="800"/>
             </section>
 
-            <section>
+            <section class="video-section">
                 <video width="500" height="300" controls>
                     <source src="baby_chicken.mp4" type="video/mp4">
                     Your browser does not support the video tag.
@@ -92,21 +95,21 @@
             </section>
             <hr />
 
-            <section>
-                <form>
+            <section class="form-section">
+                <form class="evaluation">
                     <fieldset>
                         <legend>Evaluation Form</legend>
-                        <div>
+                        <div class="form-group">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name">                         
                         </div>
 
-                        <div>
+                        <div class="form-group"> 
                             <label for="date">Date:</label>
                             <input type="date" id="date" name="date">
                         </div>
 
-                        <div>
+                        <div class="form-group">
                             <p>What did your team go over this meeting?</p>
                             <input type="checkbox" id="timeline"/>
                             <label for="timeline">Project timeline</label><br>
@@ -126,7 +129,7 @@
                             <textarea id="other-text" name="other-text" rows="4" cols="35"></textarea>
                         </div>
 
-                        <div>
+                        <div class="form-group">
                             <p>How busy is your schedule this week? (5 being most busy 1 being least busy)</p>
                             <input type="radio" id="1" name="schedule" value="1">
                             <label for="1">1</label>
@@ -140,7 +143,7 @@
                             <label for="5">5</label>
                         </div>
 
-                        <div>
+                        <div class="form-group">
                             <br><label for="hours">Approximately how many hours will you be able to work the upcoming week?</label>
                             <input list="time" id="hours" name="hours" />
                             <datalist id="time">
@@ -155,14 +158,14 @@
                     </fieldset>
                 </form>
 
-                <section>
+                <section id="submission">
                     <button type="submit">Submit</button>
                 </section>
             </section>
         </main>
 
-        <footer>
-            <p><b>CSE110 Team</b></p>
+        <footer id="footer">
+            <p><b>CSE110 Team 4 THE WIN</b></p>
         </footer>
     </body>
 </html>

@@ -1,0 +1,38 @@
+/* General CSS Topics */
+/* global pseudo-classes */
+:root {
+    --main_bg_color: #1e90ff;
+}
+/* Colors */
+.minutes-header {
+    background-color: rgb(173, 216, 230);
+    background-color: var(--main_bg_color, #4682b4);
+}
+
+.attendees ul {
+    background-color: #b7ddfe;
+}
+
+.absentees ul {
+    background-color: hsl(164, 55%, 68%);
+}
+
+.minutes-agenda {
+    color: rgb(0, 0, 128);
+}
+.video-section {
+    background-color: color(display-p3 0.3 0.5 0.9);
+}
+
+#submission {
+    background-color: color-mix(in srgb, rgb(43, 98, 160) 60%, red 40%);
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+}
+#footer {
+    color: white;
+    background-color: teal;
+    text-align: center;
+}
