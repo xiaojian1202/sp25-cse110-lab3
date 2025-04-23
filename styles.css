@@ -3,7 +3,8 @@
 :root {
     --main_bg_color: #1e90ff;
 }
-/* Colors */
+
+/* minites header */
 .minutes-header {
     background-color: rgb(173, 216, 230);
     background-color: var(--main_bg_color, #4682b4);
@@ -23,17 +24,40 @@
     padding: 1.5em;
 }
 
+/* img + video section*/
 .image-section img{
     width: 50%;
     height: 8in;
+    margin: 15px auto 30px auto;
 }
 .video-section {
     background-color: color(display-p3 0.3 0.5 0.9);
+    padding: 10px 20px 10px 20px;
+}
+
+/* form section*/
+.form-section {
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+    padding-top: 15px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+
+    border-style: solid;
+    border-color: darkslateblue;
+    border-width: 3px;
+    border-radius: 8px;
 }
 
 .form-group {
     font-size: 13pt;
 }
+
+/*submission button*/
 #submission {
     background-color: color-mix(in srgb, rgb(43, 98, 160) 60%, red 40%);
     color: white;
@@ -42,6 +66,7 @@
     border-radius: 5px;
     font-size: 16px;
 }
+
 #footer {
     color: white;
     background-color: teal;
